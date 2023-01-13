@@ -11,9 +11,7 @@ describe('ListarImagenComponent', () => {
       declarations: [ ListarImagenComponent ]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(ListarImagenComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

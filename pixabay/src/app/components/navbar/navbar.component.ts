@@ -5,16 +5,11 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent {
+@Input() titulo:string ;
 
-  @Input() titulo: string;
-
-  constructor() {
-this.titulo ="";
-
-   }
-
-  ngOnInit(): void {
-  }
+constructor(){
+  this.titulo = '';
+}
 
 }

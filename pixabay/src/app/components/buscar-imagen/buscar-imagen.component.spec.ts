@@ -11,9 +11,7 @@ describe('BuscarImagenComponent', () => {
       declarations: [ BuscarImagenComponent ]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(BuscarImagenComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
