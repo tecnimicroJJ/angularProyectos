@@ -44,4 +44,18 @@ sexo: 'Femenino', fechaIngreso: new Date () , estadoCivil: 'Casada'
     this.listEmpleado.unshift(empleado);
   }
 
+    getEmpleado(index : number){
+    return this.listEmpleado[index];
+  }
+
+  editEmpleado(empleado: Empleado, idEmpleado: number){
+    this.listEmpleado[idEmpleado].nombreCompleto = empleado.nombreCompleto,
+    this.listEmpleado[idEmpleado].correo = empleado.correo,
+    this.listEmpleado[idEmpleado].fechaIngreso = empleado.fechaIngreso,
+    this.listEmpleado[idEmpleado].telefono = empleado.telefono,
+    this.listEmpleado[idEmpleado].estadoCivil = empleado.estadoCivil,
+    this.listEmpleado[idEmpleado].sexo = empleado.sexo
+  }
+
+
 }
