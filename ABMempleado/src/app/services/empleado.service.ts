@@ -40,4 +40,8 @@ sexo: 'Femenino', fechaIngreso: new Date () , estadoCivil: 'Casada'
     this.listEmpleado.splice(index, 1);
   }
 
+  agregarEmpleado(empleado: Empleado){
+    this.listEmpleado.unshift(empleado);
+  }
+
 }

@@ -12,6 +12,7 @@ import { MensajeConfirmacionComponent } from './components/shared/mensaje-confir
 import { AngularMaterialModule } from './components/shared/angular-material/angular-material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule,Routes } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   { path: '' , component: ListEmpleadoComponent },
@@ -33,7 +34,8 @@ const routes: Routes = [
     BrowserAnimationsModule,
     AngularMaterialModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
