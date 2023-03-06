@@ -43,8 +43,9 @@ export class AddEditEmpleadoComponent implements OnInit {
   ngOnInit(): void {
     if(this.idEmpleado !== undefined){
       this.accion = "Editar";
+      this.esEditar();
     }
-    this.esEditar();
+
   }
 
   guardarEmpleado(){
@@ -92,7 +93,7 @@ export class AddEditEmpleadoComponent implements OnInit {
       telefono: empleado.telefono,
       estadoCivil: empleado.estadoCivil,
       sexo: empleado.sexo
-     })
+     });
   }
 
 }

@@ -63,7 +63,7 @@
             </mat-option>
           </mat-select>
         </mat-form-field>
-        <div *ngIf="myForm.get('estadoCivil')?.hasError('required') &&myForm.get('estadoCivil')?.touched" style="margin-top: -20px;">
+        <div *ngIf="myForm.get('estadoCivil')?.hasError('required') &&myForm.get('estadoCivil')?.touched" style="margin-top: 20px;">
           <span class="mda-form-msg">Este campo es <strong>requerido</strong></span>
         </div>
       </div>
